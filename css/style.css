@@ -3,13 +3,13 @@
 .header {
     width: 100%;
     z-index: 1000;
-    background-color: var(--white);
+    background-color: var(--secondary);
     position: fixed;
     top: 0;
 }
 
 .container_header {
-    height: 8rem;
+    height: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,15 +26,17 @@
 }
 
 .container_header .list_header a{
-    font-family: var(--font-inter);
+    font-family: var(--font-poppins);
     font-size: 2rem;
-    color: var(--secondary);
+    color: var(--accent);
     transition: all .3s;
     margin-right: 4rem;
 }
 
 .list_header a:hover {
-    color: var(--primary);
+    color: var(--white);
+    text-shadow: 1px 1px 3px var(--white);
+    transition: 0.5s;
 }
 
 .section_main  {
@@ -43,7 +45,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--accent);
+    background-color: var(--secondary);
 }
 
 .section_main .container_main  {
@@ -51,6 +53,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .section_main .container_main .iam {
@@ -58,6 +61,7 @@
     font-weight: 200;
     font-size: 2rem;
     margin-top: 1rem;
+    color: var(--white);
 }
 
 .section_main .container_main .subtitulo_main {
@@ -65,6 +69,7 @@
     font-weight: 200;
     font-size: 3rem;
     margin-top: 1rem;
+    color: var(--white);
 }
 
 .section_main .container_main .titulo_main{
@@ -72,56 +77,81 @@
     font-weight: 600;
     font-size: 7.5rem;
     letter-spacing: .1rem;
-    color: var(--primary);
+    color: var(--accent);
+    transition: 0.5s;
+}
+
+.section_main .container_main .titulo_main:hover{
+    color: var(--white);
+    text-shadow: 1px 1px 5px var(--white);
 }
 
 .section_main .navigation_main .list_main{
     display: flex;
     gap: 3rem;
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .section_main .navigation_main .list_main .icons{
     font-size: 3rem;
     transition: all .3s;
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .section_main .navigation_main .list_main .icons:hover {
-    color: var(--accent);
+    color: var(--white);
+    border-radius: 100%;
+    box-shadow: 0rem 0rem 1rem .1rem var(--white);
 }
 
 .section_two {
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     align-items: center;
     max-width: 140rem;
     margin: 0 auto;
     padding-bottom: 10rem;
-    background-color: var(--accent);
+    background-color: var(--secondary);
 }
 
 .section_two .foto_perfil {
     max-height: 40rem;
-    box-shadow:0 -.5px 1px rgba(0,0,0,0.15),0 2px 2px rgba(0,0,0,0.15),0 4px 4px rgba(0,0,0,0.15),0 8px 8px rgba(0,0,0,0.15);
+}
+
+#section_two_text {
+    padding: 2rem 0rem 2rem 0rem;
+    width: 80rem;
 }
 
 .section_two .section_two_container {
-    max-width: 80rem;
-    background-color: var(--white);
-    padding: 0.5rem 1rem 1rem 1rem;
-    box-shadow:0 -.5px 1px rgba(0,0,0,0.15),0 2px 2px rgba(0,0,0,0.15),0 4px 4px rgba(0,0,0,0.15),0 8px 8px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 370px;
+    max-width: 120rem;
+    max-width: 90%;
+    background-color: var(--secondary);
+    padding: 1rem 1rem 1rem 2rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--accent);
+    border-radius: 2rem;
+    
 }
 
 .section_two .section_two_container p{
-    padding: 0 2rem 0 5rem;
+    padding: 0 4rem 0 5rem;
     font-family: var(--font-poppins);
     font-weight: 300;
     font-size: 1.8rem;
-    color: var(--black);
-    min-width: 50rem;
+    color: var(--accent);
+    transition: 0.6s;
   }
 
+.section_two .section_two_container p:hover{
+    color: var(--white);
+    text-shadow: 1px 1px 2px var(--white);
+}
 
 .section_timeline {
     margin:auto;
@@ -131,6 +161,7 @@
     font-size: 150%;
     margin-top: 100px;
     margin-bottom: 100px;
+    background-color: var(--cinza);
 }
 
 .section_title {
@@ -164,6 +195,7 @@
     width: 50%;
     padding: 0.5rem 1rem 1rem 1rem;
     position: relative;
+    background-color: var(--white);
     box-shadow:0 -.5px 1px rgba(0,0,0,0.15),0 2px 2px rgba(0,0,0,0.15),0 4px 4px rgba(0,0,0,0.15),0 8px 8px rgba(0,0,0,0.15);
 }
 
@@ -221,12 +253,23 @@
 }
 
 .section_skills {
-    max-width: 120rem;
+    background-color: var(--secondary);
+    padding-top: 30px;
+}
+
+.inner_section_skills {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 150rem;
     font-size: 150%;
     position: relative;
     margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--secondary);
 }
 
 .title_skills {
@@ -236,21 +279,39 @@
     font-weight: 600;
     font-size: 3.5rem;
     letter-spacing: .1rem;
-    color: var(--primary);
-    margin-bottom: 50px;
+    color: var(--accent);
 }
 
 .section_skills .container_skills {
+    margin: auto;
     display: flex;
     gap: 1rem;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    border-width: 2px;
+    border-color: var(--accent);
+    border-style: solid;
+    border-radius: 1rem;
+    padding: 1rem .5rem 1rem .5rem;
+    width: 40rem;
+}
+
+.section_skills .container_skills h3{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    color: var(--accent);
+    margin-bottom: 20px;
 }
 
 .section_skills .skill {
-    width: 29.7rem;
-    height: 6rem;
+    width: 18rem;
+    height: 5rem;
     border-radius: .5rem;
     background-color: var(--accent);
     display: flex;
@@ -279,14 +340,30 @@
 
 
 @media (max-width: 767px) {
+
+.section_main .container_main .subtitulo_main {
+    text-align: center;
+}
+
+.section_main .container_main .titulo_main{
+    text-align: center;
+}
+
 .section_two {
     flex-direction: column;
 } 
 
+.section_two .section_two_container p{
+    padding: 0 .5rem 0 .5rem;
+    font-size: 1.5rem;
+  }
+
 .foto_perfil {
     margin-bottom: 5rem;
     height: 35rem;
+    margin: auto;  
 }
+
 .section_timeline {
     max-width: 95%;
 }
@@ -322,11 +399,11 @@
 
 @media (min-width: 768px) and (max-width: 1000px){
 .section_two {
-    flex-direction: column;
 } 
 
 .foto_perfil {
     margin-bottom: 5rem;
+    margin: auto;  
 }
 
 .item::before{
@@ -342,8 +419,13 @@
 
 @media (min-width: 1001px) and (max-width: 1300px){
 .foto_perfil {
-    margin-left: 5rem;       
+    margin: auto;      
 }
+
+#section_two_text{
+    margin: auto;
+  }
+
 .item::before{
     right: -2.9%;
 }
