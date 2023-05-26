@@ -18,11 +18,9 @@
     --white: #F8F8F8;
     --cinza: #EEEEEE;
     --black: #000000;
-    --primary: #1745c3;
-    --secondary: #201f1e;
+    --primary: #0f172a;
+    --secondary: #0f172a;
     --accent: #f3e5ad;
-    --ciano-default-color: #00e7f9;
-    --ciano-hover: #00b4c1;
 }
 
 html {

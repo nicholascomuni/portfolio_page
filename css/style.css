@@ -3,7 +3,7 @@
 .header {
     width: 100%;
     z-index: 1000;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     position: fixed;
     top: 0;
 }
@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 -2px 10px 5px rgba(0,0,0,0.5);
     z-index: 999;
     top: -10px;
 }
@@ -40,12 +40,12 @@
 }
 
 .section_main  {
-    padding: 10rem 0 5rem 0;
+    padding: 10rem 0rem 0rem 0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: var(--secondary);
+    background-color: var(--primary);
+    height: 60rem;
 }
 
 .section_main .container_main  {
@@ -82,7 +82,7 @@
 
 .section_main .container_main .titulo_main:hover{
     color: var(--white);
-    text-shadow: 1px 1px 5px var(--white);
+    text-shadow: 1px 1px 5px var(--primary);
 }
 
 .section_main .navigation_main .list_main{
@@ -108,9 +108,9 @@
     justify-content: space-around;
     align-items: center;
     max-width: 140rem;
-    margin: 0 auto;
-    padding-bottom: 10rem;
-    background-color: var(--secondary);
+    margin: auto;
+    background-color: var(--cinza);
+    height: 30rem;
 }
 
 .section_two .foto_perfil {
@@ -123,19 +123,19 @@
 }
 
 .section_two .section_two_container {
+    position: relative;
+    top: -12rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     min-width: 370px;
     max-width: 120rem;
     max-width: 90%;
-    background-color: var(--secondary);
     padding: 1rem 1rem 1rem 2rem;
-    border-width: 2px;
-    border-style: solid;
-    border-color: var(--accent);
-    border-radius: 2rem;
-    
+    background-color: var(--white);
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #c9c9c9;
+    border-radius: 10px;
 }
 
 .section_two .section_two_container p{
@@ -143,13 +143,14 @@
     font-family: var(--font-poppins);
     font-weight: 300;
     font-size: 1.8rem;
-    color: var(--accent);
+    color: var(--main-font-color);
     transition: 0.6s;
   }
 
 .section_two .section_two_container p:hover{
-    color: var(--white);
-    text-shadow: 1px 1px 2px var(--white);
+    color: var(--primary);
+    /* text-shadow: 1px 1px 0px var(--primary); */
+    transition: 0.6s;
 }
 
 .section_timeline {
@@ -199,6 +200,7 @@
     box-shadow: 7px 7px rgba(0,0,0,.05);
     border: 1px solid #c9c9c9;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .timeline .item:hover {
@@ -377,7 +379,7 @@
     width: 18rem;
     height: 5rem;
     border-radius: .5rem;
-    background-color: var(--accent);
+    background-color: rgba(23, 69, 195, 0.1);
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -385,22 +387,28 @@
 }
 
 .section_skills .skill:hover {
-    background-color: white;
+    background-color: var(--accent);
     transition: 0.8s;
-    box-shadow: 0rem 0rem 1rem .1rem var(--white);
+    box-shadow: 0rem 0rem 1rem .1rem var(--accent);
 }
 
+.section_skills .skill:hover p{
+    color: var(--primary);
+}
+.section_skills .skill:hover i{
+    color: var(--primary);
+}
 
 .section_skills .container_skills i{
     font-size: 3rem;
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .section_skills .container_skills p{
     padding: 0 0.5rem 0 0.5rem;
     font-family: var(--font-poppins);
     font-weight: 300;
-    color: var(--main-font-color);
+    color: var(--accent);
   }
 
 
@@ -410,14 +418,111 @@
 
 
 
-@media (max-width: 767px) {
+
+
+
+
+
+@media (max-width: 463px) {
+.section_main{
+height: 100rem;
+}
+
+.foto_perfil {
+    margin-bottom: 5rem;
+    height: 28rem;
+    margin: auto;  
+}
+  .section_two {
+      height: 50rem;
+      width:100%;
+  }
+  
+  .section_two .section_two_container {
+      top: -28rem;
+      max-width:90%;
+      min-width: 20rem;
+  }
+  
+  .section_main .container_main .subtitulo_main {
+      text-align: center;
+      font-size: 2.5rem;
+  }
+  
+  .section_main .container_main .titulo_main{
+      text-align: center;
+      font-size: 5rem;
+  }
+  
+  .section_two {
+      flex-direction: column;
+  } 
+  
+  .section_two .section_two_container p{
+      padding: 0 .5rem 0 .5rem;
+      font-size: 1.5rem;
+    }
+    
+  .section_timeline {
+      max-width: 95%;
+  }
+  
+  .timeline::before {
+      left: 3%;
+  }
+  
+  .timeline .item {
+      width: 90%;
+      margin:auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+  
+  .timeline .item.right, .timeline .item.left {
+      left: 1%;
+  }
+  
+  .timeline .item.left::before, .timeline .item.right::before {
+      left: -4%;
+  }
+  
+  .timeline_container {
+      padding: 15px;
+      position:relative;
+  }
+  .timeline .timeline_date.left {
+      margin-bottom: 10px;
+      text-align: left;
+  }
+  
+  .inner_section_skills {
+      flex-direction: row;
+      max-height: 100%;
+  }
+
+}
+
+@media (min-width: 464px) and (max-width: 767px) {
+.section_main  {
+    height: 80rem;
+}
+
+.section_two {
+    height: 50rem;
+}
+
+.section_two .section_two_container {
+    top: -22rem;
+}
 
 .section_main .container_main .subtitulo_main {
     text-align: center;
+    font-size: 2.5rem;
 }
 
 .section_main .container_main .titulo_main{
     text-align: center;
+    font-size: 5rem;
 }
 
 .section_two {
@@ -475,8 +580,27 @@
 }
 
 @media (min-width: 768px) and (max-width: 1000px){
+.section_main  {
+    height: 80rem;
+}
+
 .section_two {
-} 
+    height: 60rem;
+}
+
+.section_two .section_two_container {
+    top: -22rem;
+}
+
+.section_main .container_main .subtitulo_main {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.section_main .container_main .titulo_main{
+    text-align: center;
+    font-size: 6rem;
+}
 
 .foto_perfil {
     margin-bottom: 5rem;
@@ -504,7 +628,19 @@
 
 }
 
-@media (min-width: 1001px) and (max-width: 1300px){
+@media (min-width: 1001px) and (max-width: 1336px){
+.section_main  {
+    height: 80rem;
+}
+
+.section_two {
+    height: 50rem;
+}
+
+.section_two .section_two_container {
+    top: -22rem;
+}
+
 .foto_perfil {
     margin: auto;      
 }
