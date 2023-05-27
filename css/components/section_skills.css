@@ -1,0 +1,139 @@
+.section_skills {
+    background-color: var(--secondary);
+    padding-top: 30px;
+}
+
+.title_skills {
+    text-align: center;
+    margin: auto;
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 3.5rem;
+    letter-spacing: .1rem;
+    color: var(--accent);
+}
+
+.inner_section_skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 150rem;
+    max-height: 100rem;
+    font-size: 150%;
+    position: relative;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: var(--secondary);
+}
+
+.section_skills .container_skills {
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-width: 1px;
+    border-color: var(--accent);
+    border-style: solid;
+    border-radius: 1rem;
+    padding: 1rem .5rem 1rem .5rem;
+    width: 40rem;
+}
+.section_skills .container_skills_title_div{
+    width: 100%;
+    margin-bottom: -2rem;
+}
+.section_skills .container_skills h3{
+
+    display: inline;
+    position: relative;
+    bottom: 2rem;
+    left: 3rem;
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    color: var(--accent);
+    background-color: var(--secondary);
+    padding: 0 1rem 0 1rem;
+}
+
+.section_skills .container_skills h4{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    color: var(--accent);
+}
+
+.section_skills .skill {
+    width: 18rem;
+    height: 5rem;
+    border-radius: .5rem;
+    background-color: rgba(23, 69, 195, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 2rem;
+}
+
+.section_skills .skill:hover {
+    background-color: var(--accent);
+    transition: 0.8s;
+    box-shadow: 0rem 0rem 1rem .1rem var(--accent);
+}
+
+.section_skills .skill:hover p{
+    color: var(--primary);
+}
+.section_skills .skill:hover i{
+    color: var(--primary);
+}
+
+.section_skills .container_skills i{
+    font-size: 3rem;
+    color: var(--accent);
+}
+
+.section_skills .container_skills p{
+    padding: 0 0.5rem 0 0.5rem;
+    font-family: var(--font-poppins);
+    font-weight: 300;
+    color: var(--accent);
+  }
+
+@media (max-width: 463px) { 
+.inner_section_skills {
+    flex-direction: row;
+    max-height: 100%;
+}
+}
+
+@media (min-width: 464px) and (max-width: 767px) {
+.inner_section_skills {
+    flex-direction: row;
+    max-height: 100%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1000px){
+.section_skills .container_skills {
+    width: 35rem; 
+}
+
+.section_skills .skill {
+    width: 15rem;
+    height: 5rem;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+}
