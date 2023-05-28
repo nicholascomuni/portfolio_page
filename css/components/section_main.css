@@ -62,13 +62,17 @@
     box-shadow: 0rem 0rem 1rem .1rem var(--white);
 }
 
+.outer_section_two{
+    background-color: var(--gray);
+}
+
 .section_two {
     display: flex;
     justify-content: space-around;
     align-items: center;
     max-width: 140rem;
     margin: auto;
-    background-color: var(--cinza);
+    background-color: var(--gray);
     height: 30rem;
 }
 

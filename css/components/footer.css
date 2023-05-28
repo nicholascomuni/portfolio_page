@@ -1,0 +1,25 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 15rem;
+    background-color: var(--gray);
+    gap: 2rem;
+}
+
+.list_footer {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.list_footer i{
+    font-size: 3rem;
+    transition: all .3s;
+    color: var(--primary);
+}
+
+footer p{
+    font-size: 150%;
+}
