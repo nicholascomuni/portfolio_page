@@ -40,3 +40,20 @@ p{
     color: var(--main-font-color);
     font-size: 1.5rem;
   }
+
+  .styled_div{
+    padding: 2rem 2rem 2rem 2rem;
+    background-color: var(--white);
+    box-shadow: 7px 7px rgba(0,0,0,.05);
+    border: 1px solid #c9c9c9;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin: auto;
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
