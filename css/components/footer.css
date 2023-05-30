@@ -6,6 +6,7 @@ footer {
     height: 15rem;
     background-color: var(--gray);
     gap: 2rem;
+    border-top: 1px solid rgba(0,0,0,.15);
 }
 
 .list_footer {
