@@ -29,7 +29,7 @@
     flex-direction: column;
     max-height: 22rem;
     max-width: 38rem;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .interest_title_div {
@@ -52,5 +52,26 @@
 
 .interest p{
     text-align: center;
+}
 
+@media (max-width: 463px) {
+.interest {
+    max-width: 95%;
+    max-height: 25rem;
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+}
+
+.interests_container{
+    gap: 1.5rem;
+}
+
+
+.interest_title_div h3 {
+    font-size: 1.8rem;
+    padding: 0 .0rem 0 .0rem;
+}
+
+.section {
+    padding-bottom: 30px;
+}
 }

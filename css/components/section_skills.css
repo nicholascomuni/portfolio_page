@@ -1,5 +1,5 @@
 .section_skills {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     padding-top: 30px;
 }
 
@@ -27,7 +27,7 @@
     margin: auto;
     padding-top: 50px;
     padding-bottom: 100px;
-    background-color: var(--secondary);
+    background-color: var(--primary);
 }
 
 .section_skills .container_skills {
@@ -59,7 +59,7 @@
     font-size: 1.3rem;
     letter-spacing: .1rem;
     color: var(--accent);
-    background-color: var(--secondary);
+    background-color: var(--primary);
     padding: 0 1rem 0 1rem;
 }
 
@@ -111,6 +111,11 @@
   }
 
 @media (max-width: 463px) { 
+.section_skills .skill {
+    width: 16rem;
+    height: 5rem;
+}
+
 .inner_section_skills {
     flex-direction: row;
     max-height: 100%;
