@@ -132,12 +132,16 @@ margin-bottom: 1rem;
 margin-left: 5rem;
 }
 
-@media (max-width: 463px) {
+@media (max-width: 445px) {
 
 .section_main{
-    /* height: 100rem; */
     height: 100rem;
     width:100%;
+    padding-top: 7rem;
+}
+
+.section_main .navigation_main .list_main{
+    margin-top: 3rem;
 }
 
 .foto_perfil {
@@ -180,7 +184,7 @@ margin-left: 5rem;
 }
 }
 
-@media (min-width: 464px) and (max-width: 767px) {
+@media (min-width: 446px) and (max-width: 767px) {
 .section_main  {
     height: 80rem;
 }

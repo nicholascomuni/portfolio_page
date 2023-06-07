@@ -31,14 +31,14 @@
     position: absolute;
     content:"";
     width: 2px;
-    background-color: var(--primary);
+    background-color: var(--secondary);
     height: 100%;
     left: 50%;
     z-index: 15;
 }
 
 .timeline .item {
-    width: 50%;
+    width: 30%;
     padding: 1rem 2rem 2rem 2rem;
     position: relative;
     background-color: var(--white);
@@ -61,37 +61,27 @@
 
 .timeline .item.left {
     position: relative;
-    left: -1%;
+    left: 19%;
 }
 
 .item::before {
     position: absolute;
-    right: -3%;
+    right: -5%;
     top: 1.5rem;
     content: "";
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 100%;
-    box-shadow: .1rem 0rem 1rem .1rem var(--primary);
-    background-color: var(--primary);
+    box-shadow: .1rem 0rem 1rem .1rem var(--secondary);
+    background-color: var(--secondary);
 }
 
 .timeline .item.right::before {
-    left: -2.5%;
+    left: -4.5%;
 }
 
-.timeline p{
-    padding: 0 0.5rem 0 0.5rem;
-    font-family: var(--font-poppins);
-    font-weight: 370;
-    color: var(--main-font-color);
-    font-size: 115%;
-    word-spacing:5px;
-    margin-bottom: 0.3rem;
-  }
-
 .timeline_skills_container {
-    margin-top: 10px;
+    margin-top: 2px;
     padding: 1rem 2rem .5rem 2rem;
     display: flex;  
     gap: 2rem;
@@ -101,14 +91,37 @@
 .timeline_skill {
     height: 3rem;
     border-radius: 3rem;
-    background-color: rgba(23, 69, 195, 0.15);
+
     display: flex;
     align-items: center;
     align-content: center;
     gap: 2rem;
     padding: .5rem .5rem .5rem .5rem;
-    box-shadow: 0rem 0rem 1rem .2rem rgba(23, 69, 195, 0.15);
+    background-color: var(--secondary); 
+
+    box-shadow: 3px 3px rgba(0,0,0,.1);
+    border: 1px solid rgba(15,23,42, .5);
+    border-radius: 10px;
 }
+.timeline .timeline_item_title {
+    padding-left: 0.4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-inter);
+    font-weight: 450;
+    color: var(--primary);
+    font-size: 1.7rem;
+}
+
+.timeline p{
+    padding: 0 0.5rem 0 0.5rem;
+    font-family: var(--font-poppins);
+    font-weight: 370;
+    color: var(--main-font-color);
+    font-size: 1.5rem;
+    /* word-spacing:5px; */
+    margin-bottom: 0.3rem;
+  }
 
 .timeline_skill p{
     padding: 0 0.5rem 0 0.5rem;
@@ -120,7 +133,7 @@
 .timeline .timeline_date {
     color: var(--primary);
     font-family: var(--font-barlow);
-    font-size: 110%;
+    font-size: 1.5rem;
 }
 
 .timeline .timeline_date.left {
@@ -134,15 +147,7 @@
     font-size: 110%;
 }
 
-.timeline .timeline_item_title {
-    padding-left: 0.4rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-family: var(--font-inter);
-    font-weight: 450;
-    color: var(--primary);
-    font-size: 120%;
-}
+
 
 @media (max-width: 463px) {
 
