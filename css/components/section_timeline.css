@@ -31,7 +31,7 @@
     position: absolute;
     content:"";
     width: 2px;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     height: 100%;
     left: 50%;
     z-index: 15;
@@ -72,8 +72,8 @@
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 100%;
-    box-shadow: .1rem 0rem 1rem .1rem var(--secondary);
-    background-color: var(--secondary);
+    box-shadow: .1rem 0rem 1rem .1rem var(--primary);
+    background-color: var(--primary);
 }
 
 .timeline .item.right::before {
@@ -97,7 +97,7 @@
     align-content: center;
     gap: 2rem;
     padding: .5rem .5rem .5rem .5rem;
-    background-color: var(--secondary); 
+    background-color: var(--accent); 
 
     box-shadow: 3px 3px rgba(0,0,0,.1);
     border: 1px solid rgba(15,23,42, .5);
