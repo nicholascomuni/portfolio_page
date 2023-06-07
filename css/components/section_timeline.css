@@ -9,6 +9,16 @@
     background-color: var(--gray);
 }
 
+.timeline_img_container{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.timeline_img {
+margin: auto;
+}
+
 .section_title {
     text-align: center;
     margin: auto;
