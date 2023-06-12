@@ -129,6 +129,11 @@
     height: 5rem;
 }
 
+.section_skills .certification_skill {
+    width:100%;
+    height: 6rem;
+}
+
 .inner_section_skills {
     flex-direction: row;
     max-height: 100%;

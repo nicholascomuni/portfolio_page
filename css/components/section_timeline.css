@@ -17,6 +17,7 @@ align-items: center;
 
 .timeline_img {
 margin: auto;
+max-width: 95%;
 }
 
 .section_title {
@@ -163,6 +164,7 @@ margin: auto;
 
 .section_timeline {
     max-width: 95%;
+    display:none
 }
 
 .timeline::before {

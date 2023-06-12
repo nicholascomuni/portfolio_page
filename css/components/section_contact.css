@@ -1,0 +1,106 @@
+.section_contact {
+    /* background-color: var(--gray); */
+    background: linear-gradient(to bottom, var(--secondary), var(--white), var(--white), var(--white));
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: inset 15px 6px -6px var(--primary);
+    border-top: 1px solid rgba(0,0,0,.15);
+}
+/* D1D1D1 */
+.contact_container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    height: 40rem;
+}
+
+.title_contact {
+    /* text-align: center; */
+    /* margin: auto; */
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 3.5rem;
+    letter-spacing: .1rem;
+    color: var(--primary);
+    padding: 1rem 0rem 2rem 0rem;
+}
+
+.section_contact p{
+    padding: 0 2rem 0 2rem;
+    /* text-justify: center; */
+    text-align: center;
+    font-family: var(--font-barlow);
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: var(--primary);
+    transition: 0.6s;
+    line-height: 3rem;
+    max-width: 60rem;
+}
+
+.section_contact .buttons_container {
+    padding: 5rem 1rem 5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+/* #tooltip {
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+  } */
+
+  #tooltip {
+    position: absolute;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+#tooltip.show {
+opacity: 1;
+visibility: visible;
+}
+
+#buttonContainer {
+    position: relative;
+}
+
+@media (max-width: 463px) {
+
+    .section_contact .buttons_container {
+        padding: 5rem 1rem 5rem 1rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .contact_button {
+    height: 5rem;
+    max-width: 10rem;
+    right: 15px;
+    font-size: 1.4rem;
+    padding: .5rem 1rem .5rem 1rem;
+}
+
+}
