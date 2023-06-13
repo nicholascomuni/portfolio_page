@@ -11,13 +11,6 @@ function copyToClipboard(email) {
     document.execCommand('copy');
     document.body.removeChild(el);
 
-    // var tooltip = document.getElementById("tooltip");
-    // tooltip.style.display = "block";
-
-    // setTimeout(function() {
-    //     tooltip.style.display = "none";
-    //   }, 1000);
-
     var tooltip = document.getElementById("tooltip");
     tooltip.classList.add("show");
     
@@ -25,6 +18,7 @@ function copyToClipboard(email) {
         tooltip.classList.remove("show");
     }, 1000);
   }
+  
   
   
   

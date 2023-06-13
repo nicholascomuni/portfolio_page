@@ -79,7 +79,7 @@
 #header_cv_button {
     height: 4rem;
     min-width: 8rem;
-    position: absolute;
+    position: relative;
     right: 20px;
 }
 
@@ -127,19 +127,10 @@
     }
     
     #header_cv_button {
-        height: 4rem;
-        width: 12rem;
-        position: absolute;
-        right: 15px;
-        font-size: 1.4rem;
-        padding: .5rem 1rem .5rem 1rem;
-    }
-
-    #header_cv_button {
         content: "CV";
         height: 3.5rem;
         width: 7rem;
-        position: absolute;
+        position: relative;
         right: 15px;
         font-size: 1.5rem;
         padding: .5rem 1rem .5rem 1rem;
@@ -191,7 +182,6 @@
 #header_cv_button {
     height: 4rem;
     width: 12rem;
-    position: absolute;
     right: 15px;
     font-size: 1.4rem;
     padding: .5rem 1rem .5rem 1rem;
