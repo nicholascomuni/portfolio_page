@@ -284,6 +284,8 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
   transform: translateY(-3px);
 }
 
+.print-contact { display: none; }
+
 .hero-photo { position: relative; justify-self: center; }
 .hero-photo::before {
   content: '';
@@ -575,9 +577,11 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
     --accent-strong: var(--teal-700);
     --icon-filter: brightness(0) opacity(.55);
   }
-  .site-header, .nav-toggle, .hero-actions, .contact { opacity: 1 !important; transform: none !important; }
   .site-header { position: static; box-shadow: none; }
   .nav-links, .print-btn, .theme-toggle { display: none !important; }
+  .hero .eyebrow, .hero-actions, .social-links, .contact { display: none !important; }
+  .print-contact { display: block; }
+  .print-contact p { font-size: .88rem; color: var(--text-soft); margin-bottom: 2px; }
   body { background: var(--white); }
   .section { padding: 24px 0; }
   .role-entry { break-inside: avoid; }
