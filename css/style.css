@@ -584,4 +584,27 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
   .company-header { break-after: avoid; }
   .company-body { column-count: 1; }
   .hero-photo::before { display: none; }
+
+  /* Flatten the skills pills into plain CV-style text */
+  .skills-grid { grid-template-columns: 1fr; gap: 14px; }
+  .skill-group { break-inside: avoid; }
+  .skill-subgroup { break-inside: avoid; margin-bottom: 4px; }
+  .skill-subgroup h4 {
+    display: inline;
+    font-size: .84rem;
+    color: var(--text);
+  }
+  .skill-subgroup h4::after { content: ": "; }
+  .pill-list { display: inline; }
+  .pill {
+    display: inline;
+    background: none;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    color: var(--text-soft);
+    font-size: .84rem;
+  }
+  .pill:not(:last-child)::after { content: ", "; }
+  .pill i, .pill-icon { display: none; }
 }
