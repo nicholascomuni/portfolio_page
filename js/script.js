@@ -31,21 +31,6 @@ const spyObserver = new IntersectionObserver(
 );
 sections.forEach((section) => spyObserver.observe(section));
 
-// Reveal-on-scroll for cards and blocks
-const revealTargets = document.querySelectorAll('.reveal');
-const revealObserver = new IntersectionObserver(
-  (entries, obs) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        obs.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.05, rootMargin: '0px 0px -8% 0px' }
-);
-revealTargets.forEach((el) => revealObserver.observe(el));
-
 // "Save as PDF" just opens the browser print dialog against the print stylesheet
 document.querySelectorAll('.print-btn').forEach((btn) => btn.addEventListener('click', () => window.print()));
 
