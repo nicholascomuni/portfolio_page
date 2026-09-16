@@ -577,8 +577,7 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
     --accent-strong: var(--teal-700);
     --icon-filter: brightness(0) opacity(.55);
   }
-  .site-header { position: static; box-shadow: none; }
-  .nav-links, .print-btn, .theme-toggle { display: none !important; }
+  .site-header { display: none !important; }
   .hero .eyebrow, .hero-actions, .social-links, .contact { display: none !important; }
   .print-contact { display: block; }
   .print-contact p { font-size: .88rem; color: var(--text-soft); margin-bottom: 2px; }
