@@ -306,15 +306,38 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
    ========================================================= */
 .skills { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
+.languages-block { margin-bottom: 32px; }
+.languages-label {
+  font-size: .78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
 .languages-line {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px 20px;
-  margin-bottom: 28px;
-  font-size: .82rem;
-  color: var(--text-muted);
+  gap: 10px;
 }
-.languages-line strong { color: var(--navy-700); font-weight: 600; }
+.lang-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  background: var(--accent-soft);
+  border: 1px solid var(--teal-500);
+  border-radius: 999px;
+  font-size: .92rem;
+  font-weight: 700;
+  color: var(--teal-700);
+}
+.lang-badge em {
+  font-style: normal;
+  font-weight: 500;
+  font-size: .82rem;
+  color: var(--navy-700);
+}
 
 .core-stack {
   display: flex;
@@ -352,8 +375,19 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
   padding-bottom: 10px;
   border-bottom: 1px solid var(--border);
 }
+.skill-subgroup { margin-bottom: 12px; }
+.skill-subgroup:last-child { margin-bottom: 0; }
+.skill-subgroup h4 {
+  font-size: .72rem;
+  font-weight: 700;
+  color: var(--slate-400);
+  margin-bottom: 6px;
+}
 .pill-list { display: flex; flex-wrap: wrap; gap: 8px; }
 .pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-size: .84rem;
   font-weight: 500;
   color: var(--navy-700);
@@ -365,6 +399,14 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
 }
 .pill:hover { border-color: var(--accent); color: var(--teal-700); background: var(--accent-soft); }
 .pill.cert { background: var(--accent-soft); border-color: var(--teal-500); color: var(--teal-700); }
+.pill i { color: var(--slate-400); font-size: .95em; }
+.pill:hover i { color: var(--teal-600); }
+.pill-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  filter: brightness(0) opacity(.55);
+}
 
 /* =========================================================
    Experience
