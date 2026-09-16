@@ -601,6 +601,9 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
   .skill-group h3 {
     font-family: 'Inter', sans-serif;
     font-size: .84rem;
+    text-transform: none;
+    letter-spacing: normal;
+    color: var(--text);
     border-bottom: none;
     margin-bottom: 2px;
     padding-bottom: 0;
@@ -627,5 +630,6 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
     font-size: .84rem;
   }
   .pill:not(:last-child)::after { content: ", "; }
+  .pill.cert { color: var(--text-soft); }
   .pill i, .pill-icon { display: none; }
 }
