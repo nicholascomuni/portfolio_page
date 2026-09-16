@@ -284,7 +284,7 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
   transform: translateY(-3px);
 }
 
-.print-contact { display: none; }
+.print-contact, .print-only-heading { display: none; }
 
 .hero-photo { position: relative; justify-self: center; }
 .hero-photo::before {
@@ -581,6 +581,13 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
   .hero .eyebrow, .hero-actions, .social-links, .contact { display: none !important; }
   .print-contact { display: block; }
   .print-contact p { font-size: .88rem; color: var(--text-soft); margin-bottom: 2px; }
+  .print-only-heading {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: var(--text);
+    margin: 18px 0 8px;
+  }
   body { background: var(--white); }
   .section { padding: 24px 0; }
   .role-entry { break-inside: avoid; }
