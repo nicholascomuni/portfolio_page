@@ -87,8 +87,8 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
   padding: 0 24px;
 }
 
-.section { padding: 96px 0; }
-.section-head { margin-bottom: 44px; }
+.section { padding: 72px 0; }
+.section-head { margin-bottom: 28px; }
 .eyebrow {
   display: inline-block;
   font-size: .78rem;
@@ -231,7 +231,7 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
    Hero / About
    ========================================================= */
 .hero {
-  padding: 64px 0 100px;
+  padding: 64px 0;
   position: relative;
   overflow: hidden;
 }
