@@ -9,6 +9,13 @@
     <link rel="alternate icon" href="img/logo.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Nicholas Comuni | Data Scientist & ML Engineer</title>
+    <script>
+        (function () {
+            var stored = localStorage.getItem('theme');
+            var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            if (theme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+        })();
+    </script>
     <script src="https://kit.fontawesome.com/a7e9f4121a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
@@ -23,6 +30,10 @@
                 <a href="#contact">Contact</a>
             </nav>
             <div class="header-actions">
+                <button class="icon-btn theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <i class="fa-solid fa-moon theme-icon-moon"></i>
+                    <i class="fa-solid fa-sun theme-icon-sun"></i>
+                </button>
                 <button class="icon-btn print-btn" aria-label="Save as PDF" title="Save as PDF"><i class="fa-solid fa-print"></i></button>
                 <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
             </div>
@@ -47,16 +58,15 @@
                         <button class="btn btn-ghost print-btn"><i class="fa-solid fa-print"></i> Save as PDF</button>
                     </div>
                     <ul class="social-links">
+                        <li><a href="mailto:nicholas.comuni@outlook.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
                         <li><a href="https://github.com/nicholascomuni" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/nicholas-comuni/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
                         <li><a href="https://www.youtube.com/@programador_raiz" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
                         <li><a href="https://medium.com/@nicholas.comuni" target="_blank" rel="noopener" aria-label="Medium"><i class="fa-brands fa-medium"></i></a></li>
-                        <li><a href="https://www.instagram.com/nicholascomuni/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
                     </ul>
                 </div>
                 <div class="hero-photo">
                     <img src="img/profile_pic.jpeg" alt="Nicholas Comuni">
-                    <div class="hero-badge"><strong>8+ yrs</strong><span>building data &amp; ML products</span></div>
                 </div>
             </div>
         </section>
@@ -65,17 +75,15 @@
         <section id="skills" class="skills section">
             <div class="container">
                 <div class="section-head reveal">
-                    <p class="eyebrow">What I work with</p>
-                    <h2>Hard Skills</h2>
-                    <p class="section-sub">From modeling to the infrastructure that serves it — the stack I use to take a recommender system, pipeline or product from idea to production.</p>
+                    <h2>Skills</h2>
                 </div>
 
                 <div class="languages-block reveal">
                     <h3 class="languages-label">Languages</h3>
                     <div class="languages-line">
-                        <span class="lang-badge">🇬🇧 English <em>Advanced / Fluent</em></span>
-                        <span class="lang-badge">🇪🇸 Spanish <em>Intermediate / Fluent</em></span>
-                        <span class="lang-badge">🇧🇷 Portuguese <em>Native</em></span>
+                        <span class="lang-badge">English <em>Advanced / Fluent</em></span>
+                        <span class="lang-badge">Spanish <em>Intermediate / Fluent</em></span>
+                        <span class="lang-badge">Portuguese <em>Native</em></span>
                     </div>
                 </div>
 
@@ -83,8 +91,8 @@
                     <span class="chip"><i class="devicon-python-plain colored"></i> Python</span>
                     <span class="chip text-only"><i class="fa-solid fa-database" style="color:#4479A1"></i> SQL</span>
                     <span class="chip"><img src="icons/apache_spark-icon.svg" alt=""> PySpark / Spark</span>
-                    <span class="chip text-only"><i class="fa-solid fa-diagram-project" style="color:#0194E2"></i> MLflow</span>
-                    <span class="chip text-only"><i class="fa-solid fa-fire" style="color:#FF3621"></i> Databricks</span>
+                    <span class="chip"><img src="icons/mlflow-icon.svg" alt=""> MLflow</span>
+                    <span class="chip"><img src="icons/databricks-icon.svg" alt=""> Databricks</span>
                 </div>
 
                 <div class="skills-grid">
@@ -112,7 +120,7 @@
                     <div class="skill-group reveal">
                         <h3>AI Engineering</h3>
                         <div class="pill-list">
-                            <span class="pill"><i class="fa-solid fa-magnifying-glass"></i> RAG</span><span class="pill"><i class="fa-solid fa-plug"></i> MCPs</span><span class="pill"><i class="fa-solid fa-link"></i> LangGraph/LangChain</span><span class="pill"><i class="fa-solid fa-brain"></i> OpenAI</span><span class="pill"><i class="fa-solid fa-terminal"></i> Claude Code</span><span class="pill"><i class="fa-solid fa-vector-square"></i> Databricks Vector Search</span>
+                            <span class="pill"><i class="fa-solid fa-magnifying-glass"></i> RAG</span><span class="pill"><i class="fa-solid fa-plug"></i> MCPs</span><span class="pill"><i class="fa-solid fa-link"></i> LangGraph/LangChain</span><span class="pill"><i class="fa-solid fa-brain"></i> OpenAI</span><span class="pill"><i class="fa-solid fa-terminal"></i> Claude Code</span><span class="pill"><i class="fa-solid fa-vector-square"></i> Databricks Vector Search</span><span class="pill"><i class="fa-solid fa-braille"></i> Embeddings</span>
                         </div>
                     </div>
                     <div class="skill-group reveal">
@@ -187,7 +195,6 @@
         <section id="experience" class="experience section">
             <div class="container">
                 <div class="section-head reveal">
-                    <p class="eyebrow">Where I've been</p>
                     <h2>Experience</h2>
                 </div>
 
@@ -223,6 +230,7 @@
                         <p class="role-entry reveal"><strong>ML Model CI/CD.</strong> Designed and implemented a CI/CD pipeline for ML models on the Databricks ecosystem using Databricks Asset Bundles and Jenkins. <span class="stack-line">Databricks Asset Bundles · Jenkins · GitHub Actions · Databricks Jobs API</span></p>
                         <p class="role-entry reveal"><strong>Knowledge RAG Agentic System.</strong> Built a RAG system ingesting GitHub repos, Jira tickets and Confluence docs into Databricks Vector Search, consumed by a LangGraph/LangChain agent deployed via Databricks Apps. MLflow AgentServer handles monitoring and inference; responses pass through guardrails and are scored with MLflow GenAI metrics (Completeness, Groundedness, Fluency). <span class="stack-line">Databricks Apps · Databricks Vector Search · Databricks Secrets · LangGraph · LangChain · MLflow</span></p>
                         <p class="role-entry reveal"><strong>Databricks Development Agent.</strong> Built an agent that streamlines development on Databricks, integrating MCPs, codebases, custom skills/tools and a knowledge graph/context system. Uses the Databricks CLI/API to fetch data, interact with resources, coordinate with other agents (e.g. Databricks Genie), and take real actions within clearly defined scope and guardrails. <span class="stack-line">Anthropic · Databricks CLI · Databricks Secrets · Databricks Jobs/Volumes API · databricks-sql-connector · MCPs · Skills</span></p>
+                        <p class="role-entry reveal"><strong>String Matching Algorithm.</strong> Matched product data extracted from receipts via OCR against data scraped from vendor websites. The data was highly noisy, requiring extensive cleaning and normalization; a combination of deterministic rules, string matching algorithms and regex-based fuzzy matching produced a clean, unified final table. <span class="stack-line">PySpark · Regex · RapidFuzz</span></p>
                     </div>
                 </div>
 
@@ -247,6 +255,14 @@
                             <a href="https://medium.com/@nicholas.comuni/spark-otimiza%C3%A7%C3%A3o-de-performance-71c4ec4418af" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i> Spark: Performance Optimization</a>
                             <a href="https://medium.com/@nicholas.comuni/spark-gerenciamento-de-mem%C3%B3ria-b101a65e7a80" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i> Spark: Memory Management</a>
                         </p>
+                        <p class="role-entry reveal"><strong>Kaggle Competitions.</strong> Competed in Kaggle challenges, from computer vision to recommender systems and regression.</p>
+                        <p class="role-entry reveal links-line">
+                            <a href="https://github.com/nicholascomuni/Sorghum-100-Cultivar-Identification-EfficientNet" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Sorghum — 100 Cultivar Identification (FGVC 9)</a>
+                            <a href="https://github.com/nicholascomuni/H-M-Personalized-Fashion-Recommendations" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> H&amp;M Personalized Fashion Recommendations</a>
+                            <a href="https://github.com/nicholascomuni/Kaggle-New-York-Taxi-Copetition" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> New York Taxi Trip Duration</a>
+                        </p>
+                        <p class="role-entry reveal"><strong>Landing Pages and Other Applications.</strong> Developed a number of landing pages and websites over the years, including e-commerce sites. <span class="links-line"><a href="https://starktechnologies.com.br/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> starktechnologies.com.br</a></span></p>
+                        <p class="role-entry reveal"><strong>Video Platform Subtitle Translation.</strong> Developed and automated a Python subtitle processing and translation workflow for thousands of educational videos on a video platform, using the Google Translate API to translate content at scale and significantly cut the manual effort required. <span class="stack-line">Python · Google Translate API</span></p>
                     </div>
                 </div>
 
@@ -309,16 +325,15 @@
                 <p class="eyebrow reveal">Get in touch</p>
                 <h2 class="reveal">Let's build something together</h2>
                 <p class="section-sub reveal">Open to talking about recommender systems, MLOps, data engineering, or anything data &amp; AI. Reach out on any of these:</p>
+                <a href="mailto:nicholas.comuni@outlook.com" class="contact-email reveal"><i class="fa-solid fa-envelope"></i> nicholas.comuni@outlook.com</a>
                 <ul class="contact-social reveal">
                     <li><a href="https://github.com/nicholascomuni" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/nicholas-comuni/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href="https://www.youtube.com/@programador_raiz" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
                     <li><a href="https://medium.com/@nicholas.comuni" target="_blank" rel="noopener" aria-label="Medium"><i class="fa-brands fa-medium"></i></a></li>
-                    <li><a href="https://www.instagram.com/nicholascomuni/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
                 <div class="site-footer">
                     <span>&copy; <span id="year"></span> Nicholas Comuni dos Reis</span>
-                    <span>Built with HTML, CSS &amp; JS</span>
                 </div>
             </div>
         </section>

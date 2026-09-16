@@ -52,3 +52,15 @@ document.querySelectorAll('.print-btn').forEach((btn) => btn.addEventListener('c
 // Footer year
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// Dark mode toggle (icon visibility is handled purely by CSS via [data-theme])
+document.querySelector('.theme-toggle')?.addEventListener('click', () => {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  if (isDark) {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('theme', 'light');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  }
+});
