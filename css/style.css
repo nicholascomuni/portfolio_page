@@ -592,6 +592,7 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
   .skills-grid { grid-template-columns: 1fr; gap: 6px; }
   .skill-group { break-inside: avoid; margin-bottom: 2px; }
   .skill-group h3 {
+    font-family: 'Inter', sans-serif;
     font-size: .84rem;
     border-bottom: none;
     margin-bottom: 2px;
@@ -602,6 +603,7 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
   .skill-subgroup { break-inside: avoid; margin-bottom: 2px; }
   .skill-subgroup h4 {
     display: inline;
+    font-family: 'Inter', sans-serif;
     font-size: .84rem;
     color: var(--text);
   }
@@ -609,6 +611,7 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; }
   .pill-list { display: inline; }
   .pill {
     display: inline;
+    font-family: 'Inter', sans-serif;
     background: none;
     border: none;
     padding: 0;
